@@ -1,0 +1,228 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#faf7f7;
+}
+span{
+    font-weight: 600;
+}
+
+/* Cabecera */
+#cabecera{
+    background-color:#22262b;
+    max-width:100%;
+    width: 100%;
+    align-items:center;
+    text-align: center;
+    display:flex;
+    justify-content:space-evenly;
+    position:fixed;
+    height: 4em;
+    z-index: 1;
+}
+#tema h1{
+    color:#d4d4d0;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+.linkHeader a{
+    color:#d4d4d0;
+    text-decoration:none;
+    font-size:.7em;
+    padding:2em 1.3em;
+}
+.linkHeader a:hover{
+    color:black;
+    background-color:#a0cf86;
+}
+.dropMenu{
+    position:relative;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    padding-right:2em;
+}
+.dropMenu nav {
+    display: none;
+    position: absolute;
+    top:100%;
+    text-align: left;
+    background-color:#22262b;
+    min-width: 0;
+}
+.dropMenu:hover nav {
+    display: block;
+    padding-right:0
+}
+.dropMenu nav a{
+    white-space: nowrap;
+    display: block;
+    color:#d4d4d0;
+    text-decoration:none;
+    padding: 8px 10px;
+}
+.dropMenu nav a:hover{
+    background-color:#a0cf86;
+    color: black;
+}
+
+#botonDrop a {
+    display: inline-block;
+    color:#d4d4d0;
+    text-decoration:none;
+    font-size:1.1em;
+    padding:1.1em 1em;
+    padding-right:4.3em;
+}
+#botonDrop a:hover {
+    color:black;
+    background-color:#a0cf86;
+}
+#final{
+    padding-bottom:2em;
+}
+
+/* section */
+/* Parte izquierda de la pagina con la informacion */
+#contenedor{
+    display:flex;
+}
+
+#informacion{
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
+    max-width: 80%;
+    left:13%;
+    padding-top:4em;
+    /* height:100vh; */
+}
+
+#tema p{
+    display:flex;
+    justify-content:center;
+    padding:1em;
+    font-weight: 500;
+    font-size:1.25em;
+}
+
+#info{
+max-width: 80%;
+}
+/* Columna Izquierda */
+#contenido{
+    display:inline-block;
+    text-align: center;
+}
+.titulos{
+    font-size:1.2em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.datos{
+    font-size:1.1em;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.pdfVista{
+    text-decoration:none;
+    color:black;
+}
+.pdfVista:visited{
+    color:#a0cf86;
+}
+
+.imagenes{
+    align-items:center;
+    justify-content: center;
+    padding:0;
+    margin:0;
+    max-width: 90%;
+    width: 500px;
+    
+}
+
+
+/* Columna derecha */
+#columna{
+    /* En las siguientes dos lineas le cambias el tamaño a la columna
+    de la derecha */
+    max-width: 25%;
+    max-height: 25%;
+    margin:1em;
+    padding:1em 1.5em;
+    border:1px solid #d6d5d5;
+    border-radius:.5em;
+}
+
+.subTema{
+    display:flex;
+    justify-content:center;
+    padding:1em .5em;
+    font-weight: 500;
+    font-size:1.25em;
+}
+.referencias a{
+    color:black;
+    text-decoration:none;
+    padding:.5em 0 ;
+    /* background-color: antiquewhite; */
+}
+.referencias a:visited{
+    color:black;
+}
+.referencias ul{
+    list-style-type:none;
+    margin:0;
+    padding-left:0;
+    /* margin:.3em; */
+}
+.referencias li{
+    padding-bottom:2em;
+}
+#listasOl{
+    list-style-type:lower-alpha;
+    text-align:left;
+}
+.listasUl{
+    list-style-type:square;
+    text-align: left;
+}
+
+/* Footer */
+
+#footer{
+    max-width: 100%;
+    width: 100%;
+    background:#22262b;
+    padding:1em;
+    padding-bottom:1.4em;
+    flex-wrap:wrap;
+}
+
+#recursos{
+    display:inline-block;
+}
+#recursos p{
+    margin-left:2.5em;
+    color:#d4d4d0;
+    font-size:1.25em;
+    font-weight: 600;
+}
+#recursos a{
+    display:block;
+    color:#d4d4d0;
+    text-decoration:none;
+    padding:.5em;
+    margin:.5em;
+    border-radius:5px;
+}
+#recursos a:hover{
+    background-color:#a0cf86 ;
+    color:black;
+}
